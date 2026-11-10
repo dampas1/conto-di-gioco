@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#04191B">
 <meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Una proposta di legge sul gioco pubblico: un conto personale dello Stato, con limiti che funzionano. Guida in quattro livelli: il primo si legge in due minuti. Bozza per la discussione.">
+<link rel="canonical" href="https://dampas1.github.io/conto-di-gioco/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Conto di gioco">
+<meta property="og:title" content="Conto di gioco. Ogni giocatore, un conto.">
+<meta property="og:description" content="Una proposta di legge sul gioco pubblico: un conto personale dello Stato, con limiti che funzionano. Guida in quattro livelli: il primo si legge in due minuti. Bozza per la discussione.">
+<meta property="og:url" content="https://dampas1.github.io/conto-di-gioco/">
+<meta property="og:image" content="https://dampas1.github.io/conto-di-gioco/anteprima.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Conto di gioco. Ogni giocatore, un conto. Ogni conto, i suoi limiti.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="icona.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icona-32.png">
+<link rel="apple-touch-icon" href="icona-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Conto di gioco">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
 <title>Conto di gioco statale</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -151,6 +170,8 @@ p { margin: 0; }
 .steps li:first-child { border-top: 0; padding-top: 0; }
 .steps .when { font-family: var(--f-mono); font-size: .8rem; color: var(--brand); padding-top: 2px; }
 .steps b { display: block; }
+.steps.fit li { padding: 11px 0; }
+.steps.fit .dim { display: block; font-size: .95rem; line-height: 1.4; }
 
 /* fonti */
 .src { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
@@ -552,7 +573,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
     <section class="card" data-g="1" id="scheda-2" aria-label="Livello 1, scheda 2">
       <p class="kicker">Il punto di partenza</p>
       <h2>La macchina non sa chi sei.</h2>
-      <p class="lead">Con monete e banconote non c'e' un titolare. Nessuno puo' sapere quanto hai speso, fermarti al limite che ti sei dato, applicare l'autoesclusione o controllare l'eta' come si dovrebbe.</p>
+      <p class="lead">Con i contanti non c'e' un titolare. Nessuno puo' sapere quanto hai speso, fermarti al limite che ti sei dato, applicare l'autoesclusione o controllare l'eta' come si dovrebbe.</p>
       <div class="stat">
         <b>≈ 247.000</b>
         <span>apparecchi AWP in circa 50.000 esercizi</span>
@@ -600,10 +621,10 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
     <section class="card" data-g="1" id="scheda-6" aria-label="Livello 1, scheda 6">
       <p class="kicker">Come si procede</p>
       <h2>Prima si prova, poi si estende.</h2>
-      <p class="lead">Nessuno sa ancora di quanto cambiera' il gioco in Italia. Per questo la legge misura prima di decidere.</p>
-      <ol class="steps">
-        <li><span class="when">12 mesi</span><div><b>Una prova in alcune province</b><span class="dim">Almeno il 10% degli apparecchi, tra grandi citta' e piccoli comuni.</span></div></li>
-        <li><span class="when">3 mesi</span><div><b>Una valutazione indipendente</b><span class="dim">Fatta in autonomia dall'Istituto superiore di sanita'. Guarda anche se i danni calano.</span></div></li>
+      <p class="lead">Nessuno sa di quanto cambiera' il gioco. Per questo la legge misura prima di decidere.</p>
+      <ol class="steps fit">
+        <li><span class="when">12 mesi</span><div><b>Una prova in alcune province</b><span class="dim">Almeno il 10% degli apparecchi, in citta' grandi e piccole.</span></div></li>
+        <li><span class="when">3 mesi</span><div><b>Una valutazione indipendente</b><span class="dim">La fa l'Istituto superiore di sanita', in autonomia. Guarda se i danni calano.</span></div></li>
         <li><span class="when">Poi</span><div><b>La decisione</b><span class="dim">Si estende solo se i danni calano e il gioco illegale non cresce. Altrimenti si ferma.</span></div></li>
       </ol>
       <div class="mark"><svg class="lg" aria-hidden="true"><use href="#lg"/></svg>Conto di gioco statale</div>
@@ -612,7 +633,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
     <section class="card" data-g="1" id="scheda-7" aria-label="Livello 1, scheda 7">
       <p class="kicker">Per continuare</p>
       <h2>Vuoi capire meglio?</h2>
-      <p class="dim">Il livello 2 spiega le prove, le obiezioni piu' frequenti e chi viene toccato dalla legge.</p>
+      <p class="dim">Il livello 2 spiega le prove, le obiezioni e chi viene toccato dalla legge.</p>
       <button class="btn primary" type="button" id="to-g2">Vai al livello 2</button>
       <p class="kicker" style="margin-top:6px">Manda questa guida</p>
       <textarea class="msg" id="msg1" readonly aria-label="Messaggio da copiare"></textarea>
@@ -707,11 +728,11 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
         <details class="faq"><summary>Che cosa succede a bar e tabaccherie?</summary>
           <p>La prova parte dopo sei mesi dall'entrata in vigore e riguarda alcune province. L'obbligo per tutti arriva entro la scadenza delle concessioni, e solo se la prova supera le soglie fissate prima. C'e' un credito d'imposta del 50% sulla spesa di adeguamento, fino a 500 euro per apparecchio. Le sanzioni colpiscono solo chi consente il contante sulla macchina.</p></details>
         <details class="faq"><summary>Quanto costa?</summary>
-          <p>Gli oneri diretti sono stimati in 220 milioni dal 2027 al 2030, poi 35 milioni l'anno, coperti da un fondo di bilancio e da una quota fissa del prelievo sul gioco. Il costo vero e' il gettito che potrebbe calare: tra 42 e 126 milioni nell'anno della prova, tra 336 e 1.008 milioni l'anno a regime. Sono stime da validare.</p></details>
+          <p>Gli oneri diretti sono stimati in 220 milioni dal 2027 al 2030, poi 35 milioni l'anno, coperti da un fondo di bilancio e da una quota fissa del prelievo sul gioco. Il costo vero e' il gettito che potrebbe calare, e che oggi non ha una copertura: tra 42 e 126 milioni nell'anno della prova, tra 336 e 1.008 milioni l'anno a regime. Sono stime da validare.</p></details>
         <details class="faq"><summary>Funziona davvero?</summary>
           <p>In Italia non ci sono prove. La Norvegia suggerisce di si', ma con altre riforme insieme. Per questo la legge prevede la prova prima di estendere.</p></details>
         <details class="faq"><summary>Perche' lo Stato e non i concessionari?</summary>
-          <p>Con un conto solo, il limite vale su tutti i canali e l'autoesclusione e' una sola. I dati non finiscono a soggetti privati. In cambio lo Stato custodisce i fondi, tenuti separati dal gestore tecnico, e serve un gestore pubblico.</p></details>
+          <p>Con un conto solo, il limite vale su ogni apparecchio e l'autoesclusione e' una sola. I dati non finiscono agli operatori del gioco. In cambio lo Stato custodisce i fondi, tenuti separati dal gestore tecnico, e serve un gestore controllato dallo Stato.</p></details>
         <details class="faq"><summary>Vietare il contante e' legittimo in Europa?</summary>
           <p>Una restrizione limitata a un settore, con altri mezzi di pagamento sempre disponibili, e' compatibile con il corso legale dell'euro. La Corte di giustizia l'ha ammessa per motivi di interesse pubblico. Servono comunque il parere della BCE e la notifica alla Commissione.</p></details>
       </div>
@@ -801,13 +822,13 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <p class="capo">Capo II · Conto di gioco statale</p>
       <div class="faqs">
         <details class="faq"><summary><span class="no">Art. 3</span><span class="tt">Il conto statale</span></summary>
-          <p>Un conto nominativo per persona presso ADM, gratuito, senza bisogno di un conto bancario, gestito da una societa' pubblica. I fondi sono separati dal patrimonio del gestore.</p>
-          <p class="why">Perche': un solo tetto e un'unica autoesclusione su tutti i canali. I dati non passano a privati.</p></details>
+          <p>Un conto nominativo per persona presso ADM, gratuito, senza bisogno di un conto bancario, gestito da una societa' controllata dallo Stato. I fondi sono separati dal patrimonio del gestore.</p>
+          <p class="why">Perche': un solo tetto e un'unica autoesclusione dove il conto e' obbligatorio. I dati non passano agli operatori del gioco.</p></details>
         <details class="faq"><summary><span class="no">Art. 4</span><span class="tt">La carta di gioco</span></summary>
           <p>Gratuita, fisica o digitale, riconosciuta da ogni apparecchio e terminale di qualunque produttore. Vietati i circuiti proprietari. All'esercente arriva solo un identificativo pseudonimo.</p>
           <p class="why">Perche': evita la frammentazione del sistema e protegge la riservatezza.</p></details>
         <details class="faq"><summary><span class="no">Art. 5</span><span class="tt">Ricariche e prelievi</span></summary>
-          <p>Contanti dall'esercente con identificazione, o ricarica da un conto intestato al titolare, con i fondi disponibili. Mai a credito, mai automatica, mai da altri. Massimali unici per persona su tutti i canali. I fondi sono sempre restituibili.</p>
+          <p>Contanti dall'esercente con identificazione, o ricarica da un conto intestato al titolare, con i fondi disponibili. Mai a credito, mai automatica, mai da altri. Massimali unici per persona. I fondi sono sempre restituibili.</p>
           <p class="why">Perche': il contante resta una porta d'ingresso tracciata, a tetto basso; la banca e' tracciata ma con limiti. Niente gioco a debito.</p></details>
       </div>
       <a class="pl" href="pdf/conto-di-gioco-articolato.pdf" data-pdf="Conto di gioco - Articolato (bozza).pdf" target="_blank" rel="noopener">Il testo completo, in PDF</a>
@@ -820,7 +841,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <p class="capo">Capo III · Obbligo di gioco tramite conto</p>
       <div class="faqs">
         <details class="faq"><summary><span class="no">Art. 6</span><span class="tt">Divieto del contante</span></summary>
-          <p>Niente accettatori di banconote ne' gettoniere sugli apparecchi. Si gioca solo con autenticazione e addebito sul conto, e ogni sessione e' registrata.</p>
+          <p>Niente accettatori di banconote ne' gettoniere sugli apparecchi. Si gioca solo con autenticazione e addebito sul conto, e ogni sessione e' registrata. Le vincite vanno sul conto: le regole di pubblica sicurezza su monete e vincite si leggono riferite alla carta.</p>
           <p class="why">Perche': e' il cuore della misura, applicato per gradi secondo l'articolo 10.</p></details>
         <details class="faq"><summary><span class="no">Art. 7</span><span class="tt">Scommesse in rete fisica</span></summary>
           <p>Puntate e riscossioni nelle agenzie passano dal conto, dodici mesi dopo gli apparecchi.</p>
@@ -835,7 +856,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <p class="capo">Capo IV · Protezione dei dati</p>
       <div class="faqs">
         <details class="faq"><summary><span class="no">Art. 9</span><span class="tt">Dati personali</span></summary>
-          <p>ADM e' titolare, il gestore tecnico e' responsabile. Gli operatori vedono solo pseudonimi. Vietato ogni uso commerciale, pena la revoca. Lo storico serve solo a proteggere (art. 8-bis). Il decreto attuativo richiede la valutazione d'impatto e il parere del Garante.</p>
+          <p>ADM e' titolare, il gestore tecnico e' responsabile. Gli operatori vedono solo pseudonimi. Vietato ogni uso commerciale, pena la revoca. Lo storico serve solo a proteggere (art. 8-bis), con una base di legge anche per i dati che toccano la salute. Il decreto attuativo richiede la valutazione d'impatto e il parere del Garante.</p>
           <p class="why">Perche': compensa la maggiore esposizione dei dati con garanzie forti.</p></details>
       </div>
       <div class="mark"><svg class="lg" aria-hidden="true"><use href="#lg"/></svg>Conto di gioco statale</div>
@@ -847,10 +868,10 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <p class="capo">Capo V · Transitorio, incentivi e sanzioni</p>
       <div class="faqs">
         <details class="faq"><summary><span class="no">Art. 10</span><span class="tt">Avvio graduale</span></summary>
-          <p>Nuovi nulla osta solo per apparecchi conformi. Prova di dodici mesi in province rappresentative, confrontate con altre simili: indicatori e soglie si fissano prima. La valutazione la fa l'ISS in autonomia. L'estensione entro la scadenza delle concessioni c'e' solo se i danni calano e il gioco illegale non cresce oltre soglia; altrimenti e' sospesa.</p>
+          <p>Nuovi nulla osta solo per apparecchi conformi. Prova di dodici mesi in province rappresentative, confrontate con altre simili: indicatori e soglie si fissano prima, e i danni si misurano allo stesso modo nei due gruppi, con un'indagine a campione e con la spesa dei giocatori. La valutazione la fa l'ISS in autonomia. L'estensione entro la scadenza delle concessioni c'e' solo se i danni calano e il gioco illegale non cresce oltre soglia; altrimenti e' sospesa.</p>
           <p class="why">Perche': misura l'effetto reale prima di estendere.</p></details>
         <details class="faq"><summary><span class="no">Art. 11</span><span class="tt">Credito d'imposta</span></summary>
-          <p>50% della spesa, fino a 500 euro per apparecchio, a esercenti e gestori, nel regime de minimis.</p>
+          <p>50% della spesa, fino a 500 euro per apparecchio, a esercenti e gestori, nel regime de minimis ed entro un tetto di spesa di [70] milioni.</p>
           <p class="why">Perche': sostiene i soggetti piu' deboli della filiera.</p></details>
         <details class="faq"><summary><span class="no">Art. 12</span><span class="tt">Sanzioni</span></summary>
           <p>Esercente che consente il contante: da 5.000 a 15.000 euro per apparecchio, poi sospensione e revoca. Produttori non conformi: da 20.000 a 100.000 euro.</p>
@@ -875,9 +896,9 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
           <p class="why">Perche': rispetto delle procedure dell'Unione.</p></details>
         <details class="faq"><summary><span class="no">Art. 16</span><span class="tt">Copertura finanziaria</span></summary>
           <p>Quota fissa di PREU, 35 milioni l'anno dal 2028, per gli oneri ricorrenti. Fondo per interventi strutturali di politica economica per l'onere iniziale. Monitoraggio dei conti.</p>
-          <p class="why">Perche': rispetta l'articolo 81 della Costituzione.</p></details>
+          <p class="why">Perche': copre gli oneri diretti. Il gettito che puo' calare non ha ancora una copertura: e' il nodo da sciogliere con la Ragioneria.</p></details>
         <details class="faq"><summary><span class="no">Art. 17</span><span class="tt">Entrata in vigore ed estensione</span></summary>
-          <p>In vigore dopo quindici giorni. Con un DPCM l'obbligo puo' essere esteso alle VLT e ad altri canali.</p>
+          <p>In vigore dopo quindici giorni. Con un DPCM l'obbligo puo' essere esteso alle VLT e ad altri canali. I decreti attuativi vanno adottati entro [tre] mesi.</p>
           <p class="why">Perche': lascia aperta un'estensione controllata.</p></details>
       </div>
       <div class="mark"><svg class="lg" aria-hidden="true"><use href="#lg"/></svg>Conto di gioco statale</div>
@@ -960,7 +981,9 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
         <div><b>Le sanzioni.</b><span class="dim">Proposta: da 5.000 a 15.000 euro per apparecchio all'esercente, da 20.000 a 100.000 euro ai produttori.</span></div>
         <div><b>Il credito d'imposta.</b><span class="dim">Proposta: 50%, fino a 500 euro per apparecchio, a esercenti e gestori.</span></div>
         <div><b>Il peso della prova.</b><span class="dim">Almeno il 10% degli apparecchi, scelti con decreto.</span></div>
-        <div><b>Scommesse e VLT.</b><span class="dim">Le scommesse dodici mesi dopo gli apparecchi. Le VLT con un DPCM successivo.</span></div>
+        <div><b>Scommesse, VLT e online.</b><span class="dim">Le scommesse dodici mesi dopo gli apparecchi. Le VLT con un DPCM successivo. Per il gioco online il testo non prevede ancora l'obbligo.</span></div>
+        <div><b>Il gettito che cala.</b><span class="dim">Oggi e' misurato ma non coperto. Va deciso se coprirlo o legare l'estensione a una copertura trovata dopo la prova.</span></div>
+        <div><b>Chi gestisce il conto.</b><span class="dim">PagoPA o Poste, controllate dallo Stato ma non tutte pubbliche, oppure un soggetto interamente pubblico.</span></div>
       </div>
       <div class="mark"><svg class="lg" aria-hidden="true"><use href="#lg"/></svg>Conto di gioco statale</div>
     </section>
@@ -970,11 +993,12 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <h2>Da verificare.</h2>
       <ul class="chk">
         <li>La determina ADM del 22 ottobre 2026 sui prelievi di contante nei punti ricarica. Oggi viene da una sola fonte secondaria.</li>
-        <li>L'articolo 13 del decreto legislativo 41/2024 e i limiti sul contante nel gioco a distanza.</li>
+        <li>La copertura del gettito che cala: oggi manca, e la legge di contabilita' la chiede anche per le minori entrate.</li>
+        <li>Il gestore tecnico: dall'agosto 2026 PagoPA e' di Zecca dello Stato e Poste, e Poste e' quotata.</li>
         <li>Gli estremi della giurisprudenza costituzionale e della Corte di giustizia da citare.</li>
         <li>Raccolta e PREU delle sole AWP: chiedere all'ADM i dati disaggregati.</li>
         <li>Costi di infrastruttura, gestione, controlli e adeguamento: PagoPA, Poste, ADM e produttori.</li>
-        <li>Il costo del sistema di indicatori e interventi (art. 8-bis): non e' ancora stimato e non e' nelle cifre.</li>
+        <li>Tre costi non ancora stimati e fuori dalle cifre: indicatori e interventi (art. 8-bis), valutazione della prova, compenso per le ricariche.</li>
         <li>Capienza del Fondo e classificazione sui saldi: Ragioneria dello Stato.</li>
         <li>Esito della proroga delle concessioni nella legge di bilancio per il 2027.</li>
         <li>Parere della BCE e notifica TRIS, condizioni di efficacia.</li>
@@ -1014,7 +1038,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
       <h2>Cinque documenti.</h2>
       <div class="docs">
         <a class="doc" href="pdf/conto-di-gioco-articolato.pdf" data-pdf="Conto di gioco - Articolato (bozza).pdf" target="_blank" rel="noopener"><b>Articolato</b><span>Il testo della proposta: sei capi, diciotto articoli.</span><em class="pdf">PDF · 9 pagine</em></a>
-        <a class="doc" href="pdf/conto-di-gioco-relazione-illustrativa.pdf" data-pdf="Conto di gioco - Relazione illustrativa.pdf" target="_blank" rel="noopener"><b>Relazione illustrativa</b><span>Perche' la legge e' fatta cosi': finalita', evidenze, profili costituzionali ed europei.</span><em class="pdf">PDF · 8 pagine</em></a>
+        <a class="doc" href="pdf/conto-di-gioco-relazione-illustrativa.pdf" data-pdf="Conto di gioco - Relazione illustrativa.pdf" target="_blank" rel="noopener"><b>Relazione illustrativa</b><span>Perche' la legge e' fatta cosi': finalita', evidenze, profili costituzionali ed europei.</span><em class="pdf">PDF · 9 pagine</em></a>
         <a class="doc" href="pdf/conto-di-gioco-relazione-tecnica.pdf" data-pdf="Conto di gioco - Relazione tecnica.pdf" target="_blank" rel="noopener"><b>Relazione tecnica</b><span>Oneri anno per anno, minori entrate, copertura, sensibilita'.</span><em class="pdf">PDF · 6 pagine</em></a>
         <a class="doc" href="pdf/conto-di-gioco-valutazione-economica.pdf" data-pdf="Conto di gioco - Valutazione economica.pdf" target="_blank" rel="noopener"><b>Valutazione economica</b><span>Dati di partenza, scenari e valori proposti per sanzioni e crediti.</span><em class="pdf">PDF · 6 pagine</em></a>
         <a class="doc" href="pdf/conto-di-gioco-valutazione-e-bozza-di-legge.pdf" data-pdf="Conto di gioco - Valutazione e bozza di legge.pdf" target="_blank" rel="noopener"><b>Valutazione e bozza di legge</b><span>L'analisi di partenza: etica, diritto, diritti incisi, scelte di progetto.</span><em class="pdf">PDF · 8 pagine</em></a>
@@ -1266,7 +1290,7 @@ a.doc em.pdf { display: block; margin-top: 5px; font: normal .68rem var(--f-mono
     oggi: {
       title: "Oggi si gioca senza nome.",
       steps: [
-        ["Banconote e monete", "Le inserisci nella macchina."],
+        ["Contanti", "Li inserisci nella macchina."],
         ["La gettoniera le accetta", "Non chiede chi sei ne' quanto hai gia' speso."],
         ["Si gioca senza titolare", "Nessuno puo' fermarti, ne' applicare l'autoesclusione."]
       ],
